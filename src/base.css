@@ -1,10 +1,6 @@
-[pattern] > * {
-  grid-auto-rows: min-content;
-}
-
-[pattern] > [nav],
-[pattern] > nav
-{ grid-area: nav; }
+[pattern] > [main],
+[pattern] > main
+{ grid-area: main; }
 
 [pattern] > [footer],
 [pattern] > footer
@@ -14,26 +10,10 @@
 [pattern] > header
 { grid-area: header; }
 
-[pattern] > [section],
+[pattern] > [left],
 [pattern] > section
-{ grid-area: section; }
+{ grid-area: left; }
 
-[pattern] > [article],
-[pattern] > article
-{ grid-area: article; }
-
-[pattern] > [aside],
+[pattern] > [right],
 [pattern] > aside
-{ grid-area: aside; }
-
-[pattern]
-{
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-auto-flow: column;
-  grid-template-areas:
-    "header"
-    "."
-    "footer";
-}
-[pattern] > *:not(header, footer) { grid-area: auto; }
+{ grid-area: right; }

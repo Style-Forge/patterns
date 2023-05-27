@@ -1,9 +1,9 @@
-[pattern="media"] {
+[pattern][media] {
   grid-template-columns: 64px 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-    ". section";
+    ". main";
 }
-[pattern="media"] [pattern="media"] {
+[pattern][media] [pattern][media] {
   grid-template-columns: 32px 1fr;
 }
