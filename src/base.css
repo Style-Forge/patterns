@@ -1,0 +1,39 @@
+[pattern] > * {
+  grid-auto-rows: min-content;
+}
+
+[pattern] > [nav],
+[pattern] > nav
+{ grid-area: nav; }
+
+[pattern] > [footer],
+[pattern] > footer
+{ grid-area: footer; }
+
+[pattern] > [header],
+[pattern] > header
+{ grid-area: header; }
+
+[pattern] > [section],
+[pattern] > section
+{ grid-area: section; }
+
+[pattern] > [article],
+[pattern] > article
+{ grid-area: article; }
+
+[pattern] > [aside],
+[pattern] > aside
+{ grid-area: aside; }
+
+[pattern]
+{
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "header"
+    "."
+    "footer";
+}
+[pattern] > *:not(header, footer) { grid-area: auto; }

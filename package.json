@@ -1,0 +1,25 @@
+{
+  "name": "style-forge.patterns",
+  "version": "1.0.0",
+  "description": "Patterns CSS for style-forge",
+  "main": "patterns.css",
+  "repository": "github:sarmaged/style-forge.patterns",
+  "author": "Sarmaged <sarmaged@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "style-forge.patterns",
+    "patterns",
+    "html",
+    "grid",
+    "css"
+  ],
+  "scripts": {
+    "build": "node builder.js",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-import": "^15.1.0"
+  }
+}
