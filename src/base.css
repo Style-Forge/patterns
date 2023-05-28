@@ -1,19 +1,5 @@
-[pattern] > [main],
-[pattern] > main
-{ grid-area: main; }
-
-[pattern] > [footer],
-[pattern] > footer
-{ grid-area: footer; }
-
-[pattern] > [header],
-[pattern] > header
-{ grid-area: header; }
-
-[pattern] > [left],
-[pattern] > section
-{ grid-area: left; }
-
-[pattern] > [right],
-[pattern] > aside
-{ grid-area: right; }
+[pattern] > [aside] { grid-area: aside }
+[pattern] > [footer] { grid-area: footer }
+[pattern] > [header] { grid-area: header }
+[pattern] > [main] { grid-area: main }
+[pattern] > [menu] { grid-area: menu }

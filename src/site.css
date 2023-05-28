@@ -7,37 +7,37 @@
     "footer";
 }
 
-[pattern][left] {
+[pattern][menu] {
   grid-template-columns: auto 1fr;
   grid-template-areas:
     "header header"
-    "left main"
+    "menu main"
     "footer footer";
 }
-[pattern][right] {
+[pattern][aside] {
   grid-template-columns: 1fr auto;
   grid-template-areas:
     "header header"
-    "main right"
+    "main aside"
     "footer footer";
 }
-[pattern][left][right] {
+[pattern][menu][aside] {
   grid-template-columns: auto 1fr auto;
   grid-template-areas:
     "header header header"
-    "left main right"
+    "menu main aside"
     "footer footer footer";
 }
 
 @media (max-width: 768px) {
-  [pattern][left][right] {
+  [pattern][menu][aside] {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
       "header"
-      "left"
+      "menu"
       "main"
-      "right"
+      "aside"
       "footer";
   }
 }
