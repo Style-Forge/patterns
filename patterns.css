@@ -1,206 +1,57 @@
-/*! style-forge.patterns v1.0.1 | MIT License | github.com/sarmaged/style-forge.patterns */
+/*! style-forge.patterns v1.1.1 | MIT License | github.com/sarmaged/style-forge.patterns */
 
-[pattern] > * {
-  grid-auto-rows: min-content;
-}
-
-[pattern] > [nav],
-[pattern] > nav
-{ grid-area: nav; }
-
-[pattern] > [footer],
-[pattern] > footer
-{ grid-area: footer; }
-
-[pattern] > [header],
-[pattern] > header
-{ grid-area: header; }
-
-[pattern] > [section],
-[pattern] > section
-{ grid-area: section; }
-
-[pattern] > [article],
-[pattern] > article
-{ grid-area: article; }
-
-[pattern] > [aside],
-[pattern] > aside
-{ grid-area: aside; }
-
-[pattern]
-{
-  grid-template-columns: 1fr;
+[pattern] > [aside] { grid-area: aside }
+[pattern] > [footer] { grid-area: footer }
+[pattern] > [header] { grid-area: header }
+[pattern] > [main] { grid-area: main }
+[pattern] > [menu] { grid-area: menu }
+[pattern] {
+  grid-template-columns: auto;
   grid-template-rows: auto 1fr auto;
-  grid-auto-flow: column;
   grid-template-areas:
     "header"
-    "."
+    "main"
     "footer";
 }
-
-[pattern] > *:not(header, footer) { grid-area: auto; }
-
-[pattern="site"] > *:not(header, [nav], nav, [section], section, [article], article, footer, [aside], aside) {
-  grid-area: main;
+[pattern][menu] {
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
 }
-
-[pattern="site"][article] {
-  grid-template-rows: auto 1fr 1fr auto;
+[pattern][aside] {
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
 }
-
-[pattern="site"][nav] {
-  grid-template-rows: auto auto 1fr auto;
-}
-
-[pattern="site"][nav][article]
-{
-  grid-template-rows: auto auto 1fr 1fr auto;
-}
-
-[pattern="site"] {
-  grid-template-columns: repeat(3, 1fr);
+[pattern][menu][aside] {
+  grid-template-columns: auto 1fr auto;
   grid-template-areas:
     "header header header"
-    "section main main"
+    "menu main aside"
     "footer footer footer";
 }
-
-[pattern="site"][article] {
-  grid-template-areas:
-    "header header header"
-    "section main main"
-    "article main main"
-    "footer footer footer";
-}
-
-[pattern="site"][aside] {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "header header header header"
-    "section main main aside"
-    "footer footer footer footer";
-}
-
-[pattern="site"][aside][article] {
-  grid-template-areas:
-    "header header header header"
-    "section main main aside"
-    "article main main aside"
-    "footer footer footer footer";
-}
-
-[pattern="site"][nav] {
-  grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "section main main"
-    "footer footer footer";
-}
-
-[pattern="site"][nav][article] {
-  grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "section main main"
-    "article main main"
-    "footer footer footer";
-}
-
-[pattern="site"][nav][article][aside] {
-  grid-template-areas:
-    "header header header header"
-    "nav nav nav nav"
-    "section main main aside"
-    "article main main aside"
-    "footer footer footer footer";
-}
-
-/* tablet or low */
-
 @media (max-width: 768px) {
-  [pattern="site"],
-  [pattern="site"][aside] {
+  [pattern][menu][aside] {
     grid-template-columns: 1fr;
-  }
-  [pattern="site"] {
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas:
-    "header"
-    "section"
-    "main"
-    "footer";
-  }
-  [pattern="site"][article],
-  [pattern="site"][nav]
-  {
-    grid-template-rows: auto auto auto 1fr auto;
-  }
-  [pattern="site"][article] {
-    grid-template-areas:
-    "header"
-    "section"
-    "article"
-    "main"
-    "footer";
-  }
-  [pattern="site"][aside] {
     grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
-    "header"
-    "section"
-    "main"
-    "aside"
-    "footer";
-  }
-  [pattern="site"][aside][article] {
-    grid-template-rows: auto auto auto 1fr auto auto;
-    grid-template-areas:
-    "header"
-    "section"
-    "article"
-    "main"
-    "aside"
-    "footer";
-  }
-  [pattern="site"][nav] {
-    grid-template-areas:
-    "header"
-    "nav"
-    "section"
-    "main"
-    "footer";
-  }
-  [pattern="site"][nav][article] {
-    grid-template-rows: repeat(4, auto) 1fr auto;
-    grid-template-areas:
-    "header"
-    "nav"
-    "section"
-    "article"
-    "main"
-    "footer";
-  }
-  [pattern="site"][nav][article][aside] {
-    grid-template-rows: repeat(4, auto) 1fr auto auto;
-    grid-template-areas:
-    "header"
-    "nav"
-    "section"
-    "article"
-    "main"
-    "aside"
-    "footer";
+      "header"
+      "menu"
+      "main"
+      "aside"
+      "footer";
   }
 }
-
-[pattern="media"] {
+[pattern][media] {
   grid-template-columns: 64px 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-    ". section";
+    ". main";
 }
-
-[pattern="media"] [pattern="media"] {
+[pattern][media] [pattern][media] {
   grid-template-columns: 32px 1fr;
 }
