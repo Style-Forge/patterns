@@ -4,6 +4,4 @@
   grid-template-areas:
     ". main";
 }
-[pattern][media] [pattern][media] {
-  grid-template-columns: 32px 1fr;
-}
+[pattern][media] [pattern][media] { grid-template-columns: 32px 1fr }
