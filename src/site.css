@@ -1,5 +1,6 @@
 [pattern] {
-  grid-template-rows: 1fr;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
   grid-template-areas:
     "main";
 }
@@ -90,13 +91,8 @@
 }
 
 @media (max-width: 768px) {
-  [pattern],
-  [pattern][menu],
-  [pattern][aside],
-  [pattern][menu][aside]
-  { grid-template-columns: 1fr }
-
   [pattern][menu] {
+    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
       "menu"
@@ -110,14 +106,12 @@
       "main";
   }
   [pattern][menu][footer] {
-    grid-template-rows: auto 1fr;
     grid-template-areas:
       "menu"
       "main"
       "footer";
   }
   [pattern][menu][header][footer] {
-    grid-template-rows: auto auto 1fr;
     grid-template-areas:
       "header"
       "menu"
@@ -133,13 +127,11 @@
       "main aside";
   }
   [pattern][aside][footer] {
-    grid-template-rows: 1fr;
     grid-template-areas:
       "main aside"
       "footer footer";
   }
   [pattern][aside][header][footer] {
-    grid-template-rows: auto 1fr;
     grid-template-areas:
       "header header"
       "main aside"
@@ -147,7 +139,7 @@
   }
 
   [pattern][menu][aside] {
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "menu menu"
       "main aside";
@@ -160,14 +152,12 @@
       "main aside";
   }
   [pattern][menu][aside][footer] {
-    grid-template-rows: auto 1fr;
     grid-template-areas:
       "menu menu"
       "main aside"
       "footer footer";
   }
   [pattern][menu][aside][header][footer] {
-    grid-template-rows: auto auto 1fr;
     grid-template-areas:
       "header header"
       "menu menu"
@@ -177,34 +167,24 @@
 }
 
 @media (max-width: 480px) {
-  [pattern],
-  [pattern][menu],
-  [pattern][aside],
-  [pattern][menu][aside]
-  { grid-template-columns: 1fr }
-
   [pattern][aside] {
-    grid-template-rows: 1fr;
     grid-template-areas:
       "main"
       "aside";
   }
   [pattern][aside][header] {
-    grid-template-rows: auto auto 1fr;
     grid-template-areas:
       "header"
       "main"
       "aside";
   }
   [pattern][aside][footer] {
-    grid-template-rows: auto 1fr;
     grid-template-areas:
       "main"
       "aside"
       "footer";
   }
   [pattern][aside][header][footer] {
-    grid-template-rows: auto 1fr;
     grid-template-areas:
       "header"
       "main"
@@ -213,14 +193,12 @@
   }
 
   [pattern][menu][aside] {
-    grid-template-rows: auto 1fr;
     grid-template-areas:
       "menu"
       "main"
       "aside";
   }
   [pattern][menu][aside][header] {
-    grid-template-rows: auto auto 1fr;
     grid-template-areas:
       "header"
       "menu"
@@ -228,7 +206,6 @@
       "aside";
   }
   [pattern][menu][aside][footer] {
-    grid-template-rows: auto 1fr;
     grid-template-areas:
       "menu"
       "main"
@@ -236,7 +213,6 @@
       "footer";
   }
   [pattern][menu][aside][header][footer] {
-    grid-template-rows: auto auto 1fr;
     grid-template-areas:
       "header"
       "menu"

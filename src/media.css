@@ -1,6 +1,5 @@
 [pattern][media] {
   grid-template-columns: 64px 1fr;
-  grid-template-rows: 1fr;
   grid-template-areas:
     ". main";
 }

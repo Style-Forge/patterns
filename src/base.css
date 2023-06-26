@@ -1,3 +1,4 @@
+[pattern] { display: grid }
 [pattern] > [aside] { grid-area: aside }
 [pattern] > [footer] { grid-area: footer }
 [pattern] > [header] { grid-area: header }
