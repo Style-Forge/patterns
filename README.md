@@ -9,6 +9,17 @@ Patterns CSS for [style-forge](https://www.npmjs.com/package/style-forge)
 
 <hr />
 
+## Installation
+```bash
+npm install style-forge.patterns
+```
+```bash
+yarn add style-forge.patterns
+```
+
+<hr />
+
+
 ## Site model
 
 <u>Grid model for the site [media query for mobile devices]</u>
