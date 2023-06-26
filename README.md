@@ -20,7 +20,7 @@ Patterns CSS for [style-forge](https://www.npmjs.com/package/style-forge)
   <div menu>Menu</div>
   <div aside>Aside</div>
 
-  <!-- Всегда должен быть -->
+  <!-- Should always be -->
   <div main>
     <h1>Main</h1>
   </div>
@@ -31,7 +31,7 @@ Patterns CSS for [style-forge](https://www.npmjs.com/package/style-forge)
 ### Options
 
 <details>
-  <summary><strong><code>pattern</code> - Это главный Grid блок</strong></summary>
+  <summary><strong><code>pattern</code> - This is the main Grid block</strong></summary>
 
   ```html
   <div pattern>
