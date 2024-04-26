@@ -1,7 +1,8 @@
 {
   "name": "style-forge.patterns",
-  "version": "1.3.3",
+  "version": "2.0.0",
   "description": "Patterns CSS for style-forge",
+  "type": "module",
   "main": "patterns.css",
   "repository": "github:sarmaged/style-forge.patterns",
   "author": "Sarmaged <sarmaged@gmail.com>",
