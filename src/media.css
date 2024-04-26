@@ -1,13 +1,13 @@
-[pattern][media] {
+.sf-pattern.area-media {
   grid-template-columns: 64px 1fr;
   grid-template-areas:
-    ". main";
+    '. main';
 }
 
-[pattern][media] [pattern][media] { grid-template-columns: 32px 1fr }
+.sf-pattern.area-media .sf-pattern.area-media { grid-template-columns: 32px 1fr }
 
-[pattern][media] [pattern][media],
-[pattern][media] ~ [pattern][media]
+.sf-pattern.area-media .sf-pattern.area-media,
+.sf-pattern.area-media ~ .sf-pattern.area-media
 {
   margin-block-start: 0.5em;
   padding-block-start: 1em;

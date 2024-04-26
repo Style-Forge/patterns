@@ -1,6 +1,6 @@
-[pattern] { display: grid }
-[pattern] > [aside] { grid-area: aside }
-[pattern] > [footer] { grid-area: footer }
-[pattern] > [header] { grid-area: header }
-[pattern] > [main] { grid-area: main }
-[pattern] > [menu] { grid-area: menu }
+.sf-pattern { display: grid }
+.sf-pattern > .area-aside { grid-area: aside }
+.sf-pattern > .area-footer { grid-area: footer }
+.sf-pattern > .area-header { grid-area: header }
+.sf-pattern > .area-main { grid-area: main }
+.sf-pattern > .area-menu { grid-area: menu }
