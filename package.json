@@ -11,6 +11,7 @@
   "author": "Sarmaged <sarmaged@gmail.com>",
   "license": "MIT",
   "keywords": [
+    "style-forge",
     "CSS",
     "patterns",
     "utility",
@@ -29,8 +30,7 @@
     "performance",
     "mobile-first",
     "customizable",
-    "pre-defined classes",
-    "style-forge"
+    "pre-defined classes"
   ],
   "scripts": {
     "build": "node builder.js"

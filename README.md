@@ -174,13 +174,13 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Links
 
-- [style-forge](https://github.com/yourusername/style-forge)
-- [style-forge.base](https://github.com/yourusername/style-forge.base)
-- [style-forge.colors](https://github.com/yourusername/style-forge.colors)
-- [style-forge.form](https://github.com/yourusername/style-forge.form)
-- [style-forge.helpers](https://github.com/yourusername/style-forge.helpers)
-- [style-forge.patterns](https://github.com/yourusername/style-forge.patterns)
-- [style-forge.themes](https://github.com/yourusername/style-forge.themes)
+- [style-forge](https://github.com/Sarmaged/style-forge)
+- [style-forge.base](https://github.com/Sarmaged/style-forge.base)
+- [style-forge.colors](https://github.com/Sarmaged/style-forge.colors)
+- [style-forge.form](https://github.com/Sarmaged/style-forge.form)
+- [style-forge.helpers](https://github.com/Sarmaged/style-forge.helpers)
+- [style-forge.patterns](https://github.com/Sarmaged/style-forge.patterns)
+- [style-forge.themes](https://github.com/Sarmaged/style-forge.themes)
 
 ## Authors
 
@@ -188,4 +188,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-If you have any questions or suggestions, please open an issue in [Issues](https://github.com/yourusername/style-forge.patterns/issues).
+If you have any questions or suggestions, please open an issue in [Issues](https://github.com/Sarmaged/style-forge.patterns/issues).
