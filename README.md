@@ -8,7 +8,7 @@
 
 ## Description
 
-The `style-forge.patterns` is a versatile and efficient CSS utility library designed to simplify the creation and management of CSS patterns and utilities. It offers a comprehensive collection of pre-defined CSS classes, enabling developers to rapidly build responsive and consistent user interfaces without the need for writing repetitive styles from scratch.
+`Style-Forge.Patterns` is a versatile and efficient CSS utility library designed to simplify the creation and management of CSS patterns and utilities. It offers a comprehensive collection of pre-defined CSS classes, enabling developers to rapidly build responsive and consistent user interfaces without the need for writing repetitive styles from scratch.
 
 ## Installation
 
