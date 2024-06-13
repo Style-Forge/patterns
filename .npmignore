@@ -1,6 +1,8 @@
-!LICENSE
+
 !package.json
 !README.md
 !src/
+!dist/
 !*.css
+
 *

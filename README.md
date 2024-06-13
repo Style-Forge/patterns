@@ -1,24 +1,40 @@
-# style-forge.patterns
 
-[![npm](https://img.shields.io/npm/v/style-forge.patterns)][npm-link]
-[![npm](https://img.shields.io/npm/dm/style-forge.patterns)][npm-link]
+# Style-Forge.Patterns
 
-Patterns CSS for [style-forge](https://www.npmjs.com/package/style-forge)
+![npm](https://img.shields.io/npm/v/style-forge.patterns)
+![npm](https://img.shields.io/npm/dm/style-forge.patterns)
+![license](https://img.shields.io/npm/l/style-forge.patterns)
+![build](https://github.com/Sarmaged/style-forge.patterns/actions/workflows/publish.yml/badge.svg)
 
-⚠️ The order in which elements are written within `pattern` is not important
+## Description
 
-<hr />
+The `style-forge.patterns` is a versatile and efficient CSS utility library designed to simplify the creation and management of CSS patterns and utilities. It offers a comprehensive collection of pre-defined CSS classes, enabling developers to rapidly build responsive and consistent user interfaces without the need for writing repetitive styles from scratch.
 
 ## Installation
+
+You can install the package via npm or yarn:
+
 ```bash
 npm install style-forge.patterns
 ```
+
 ```bash
 yarn add style-forge.patterns
 ```
 
-<hr />
+## Usage
 
+After installation, you can import the CSS file into your project:
+
+```css
+@import "style-forge.patterns";
+```
+
+Or, if you are using Webpack or another module bundler:
+
+```js
+import 'style-forge.patterns';
+```
 
 ## Site model
 
@@ -152,9 +168,24 @@ Grid model for the media
 ```
 </details>
 
-## License [![NPM](https://img.shields.io/npm/l/style-forge.patterns)](https://github.com/Sarmaged/style-forge.patterns/blob/main/LICENSE)
+## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-[npm-link]: https://www.npmjs.com/package/style-forge.patterns
-[github-link]: https://github.com/Sarmaged/style-forge.patterns
+## Links
+
+- [style-forge](https://github.com/yourusername/style-forge)
+- [style-forge.base](https://github.com/yourusername/style-forge.base)
+- [style-forge.colors](https://github.com/yourusername/style-forge.colors)
+- [style-forge.form](https://github.com/yourusername/style-forge.form)
+- [style-forge.helpers](https://github.com/yourusername/style-forge.helpers)
+- [style-forge.patterns](https://github.com/yourusername/style-forge.patterns)
+- [style-forge.themes](https://github.com/yourusername/style-forge.themes)
+
+## Authors
+
+- **Dmitrii Sagalov** - *Expert in interface development* - [Sarmaged](https://github.com/Sarmaged)
+
+## Contact
+
+If you have any questions or suggestions, please open an issue in [Issues](https://github.com/yourusername/style-forge.patterns/issues).
