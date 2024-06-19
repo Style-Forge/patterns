@@ -10,7 +10,7 @@
 
 ## Description
 
-To check out docs, visit [style-forge.dev](https://style-forge.dev/petterns/)
+To check out docs, visit [style-forge.dev](https://style-forge.dev/patterns/)
 
 ## License
 
