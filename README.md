@@ -2,8 +2,9 @@
 # Style-Forge.Patterns
 
 ![npm](https://img.shields.io/npm/v/style-forge.patterns)
-![npm](https://img.shields.io/npm/dm/style-forge.patterns)
 ![license](https://img.shields.io/npm/l/style-forge.patterns)
+![npm](https://img.shields.io/npm/dm/style-forge.patterns)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/90fd8e204aef4dbc971fb93810fb89ec)](https://app.codacy.com/gh/Sarmaged/style-forge.patterns/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 ![build](https://github.com/Sarmaged/style-forge.patterns/actions/workflows/publish.yml/badge.svg)
 
 `Style-Forge.Patterns` is a versatile and efficient CSS utility library designed to simplify the creation and management of CSS patterns and utilities. It offers a comprehensive collection of pre-defined CSS classes, enabling developers to rapidly build responsive and consistent user interfaces without the need for writing repetitive styles from scratch.
