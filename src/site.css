@@ -92,7 +92,7 @@
 
 @media (max-width: 768px) {
   .sf-pattern.area-menu {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr;
     grid-template-areas:
       'menu'
@@ -119,9 +119,10 @@
       'footer';
   }
 
-  .sf-pattern.area-aside { grid-template-areas: 'main aside' }
+  .sf-pattern.area-aside {
+    grid-template-areas: 'main aside'
+  }
   .sf-pattern.area-aside.area-header {
-    grid-template-rows: auto 1fr;
     grid-template-areas:
       'header header'
       'main aside';
@@ -138,8 +139,8 @@
       'footer footer';
   }
 
-  .sf-pattern.area-menu.aside {
-    grid-template-columns: 1fr;
+  .sf-pattern.area-menu.area-aside {
+    grid-template-columns: 1fr auto;
     grid-template-areas:
       'menu menu'
       'main aside';
@@ -168,11 +169,13 @@
 
 @media (max-width: 480px) {
   .sf-pattern.area-aside {
+    grid-template-rows: 1fr auto;
     grid-template-areas:
       'main'
       'aside';
   }
   .sf-pattern.area-aside.area-header {
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
       'header'
       'main'
@@ -193,6 +196,8 @@
   }
 
   .sf-pattern.area-menu.area-aside {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
       'menu'
       'main'
