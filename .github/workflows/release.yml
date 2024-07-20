@@ -31,8 +31,10 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
 
-      - name: Fetch all tags
-        run: git fetch --tags
+      - name: Fetch all tags and Pull
+        run: |
+          git fetch --tags
+          git pull origin main
 
       - name: Extract version and previous tag
         id: extract_info
@@ -60,7 +62,6 @@ jobs:
       - name: Create and push new branch
         run: |
           NEW_BRANCH=release-v${VERSION}
-          git pull origin main
           git checkout -b ${NEW_BRANCH}
           git push origin ${NEW_BRANCH}
           echo "NEW_BRANCH=$NEW_BRANCH" >> $GITHUB_ENV
