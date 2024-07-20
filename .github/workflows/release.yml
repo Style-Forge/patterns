@@ -31,10 +31,8 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
 
-      - name: Fetch all tags and Pull
-        run: |
-          git fetch --tags
-          git pull origin main
+      - name: Fetch all tags
+        run: git fetch --tags
 
       - name: Extract version and previous tag
         id: extract_info
