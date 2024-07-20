@@ -57,6 +57,9 @@ jobs:
           fi
           echo "UPDATE_TYPE=$UPDATE_TYPE" >> $GITHUB_ENV
 
+      - name: Pull latest changes
+        run: git pull origin main
+
       - name: Create and push new branch
         run: |
           NEW_BRANCH=release-v${VERSION}
