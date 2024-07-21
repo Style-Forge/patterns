@@ -6,9 +6,9 @@
   "main": "patterns.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarmaged/style-forge.patterns.git"
+    "url": "git+https://github.com/Style-Forge/patterns.git"
   },
-  "author": "Sarmaged <sarmaged@gmail.com>",
+  "author": "Dmitrii Sagalov <sarmaged@gmail.com>",
   "license": "MIT",
   "keywords": [
     "style-forge",
@@ -42,9 +42,9 @@
     "postcss-minify": "^1.1.0"
   },
   "bugs": {
-    "url": "https://github.com/sarmaged/style-forge.patterns/issues"
+    "url": "https://github.com/Style-Forge/patterns/issues"
   },
-  "homepage": "https://github.com/sarmaged/style-forge.patterns#readme",
+  "homepage": "https://style-forge.dev/patterns/",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }
