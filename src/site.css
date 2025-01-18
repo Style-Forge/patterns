@@ -90,7 +90,7 @@
     'footer footer footer';
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .sf-pattern.area-menu {
     grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr;
@@ -167,7 +167,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .sf-pattern.area-aside {
     grid-template-rows: 1fr auto;
     grid-template-areas:
