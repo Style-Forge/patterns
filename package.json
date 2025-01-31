@@ -1,6 +1,6 @@
 {
   "name": "style-forge.patterns",
-  "version": "2025.1.18",
+  "version": "2025.1.31",
   "description": "Style-Forge.Patterns - versatile CSS library with pre-defined classes for responsive, consistent user interfaces.",
   "type": "module",
   "main": "patterns.css",
